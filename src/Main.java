@@ -1,10 +1,9 @@
-import day1.HistorianHysteria;
+import day2.RedNosedReports;
 
 public class Main {
   public static void main(String[] args) {
-    FileManager file = new FileManager("data/day1.txt");
-    HistorianHysteria hh = new HistorianHysteria(file.getString());
-    System.out.println(hh.getDifference());
-    System.out.println(hh.getSimilarity());
+    FileManager file = new FileManager("data/day2.txt");
+    RedNosedReports rnr = new RedNosedReports(file.getString());
+    System.out.println(rnr.getNumberSafe());
   }
 }
