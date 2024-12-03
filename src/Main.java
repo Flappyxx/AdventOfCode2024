@@ -1,9 +1,9 @@
-import day2.RedNosedReports;
+import day3.MullItOver;
 
 public class Main {
   public static void main(String[] args) {
-    FileManager file = new FileManager("data/day2.txt");
-    RedNosedReports rnr = new RedNosedReports(file.getString());
-    System.out.println(rnr.getNumberSafe());
+    FileManager file = new FileManager("data/day3.txt");
+    MullItOver mio = new MullItOver(file.getStringWithoutLineBreak());
+    System.out.println(mio.getTotal());
   }
 }
